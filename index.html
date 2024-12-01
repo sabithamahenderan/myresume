@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myresume</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .one, .two, .three, .four {
+      display: grid;
+      grid-template-columns: 900px 300px;
+      gap: 20px;
+      padding: 20px;
+    }
+    .one {
+      grid-template-columns: 900px 300px;
+    }
+    .two, .three, .four {
+      grid-template-columns: 900px 300px;
+    }
+    .one, .two, .three, .four {
+      background-color: #f4f4f4;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    h1, h2, h3, h4 {
+      margin: 0 0 10px;
+    }
+    a {
+      display: block;
+      margin: 5px 0;
+      color: #007BFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul, ol {
+      margin: 0;
+      padding: 0;
+    }
+    ul li, ol li {
+      margin-bottom: 10px;
+    }
+    .two .skill ul, .three .tools ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .two .skill li, .three .tools li {
+      margin-bottom: 10px;
+    }
+
+    /* Media Queries for responsive design */
+    @media (max-width: 1200px) {
+      .one, .two, .three, .four {
+        grid-template-columns: 1fr 1fr;
+      }
+      body{
+        font-size: 10px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .one, .two, .three, .four {
+        padding: 10px;
+      }
+      .name, .phone, .obj, .skill, .projects, .tools, .educate, .lang {
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .name h1, .phone h3, .obj h2, .skill h2, .projects h2, .tools h2, .educate h2, .lang h2 {
+        font-size: 10px;
+      }
+      .name a, .phone a, .skill li, .tools li, .educate h3, .lang p {
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="one">
+    <div class="name">
+      <h1>M. Sabitha</h1>
+      <a href="mailto:sabithamahenderan393@gmail.com">sabithamahenderan393@gmail.com</a>
+    </div>
+    <div class="phone">
+      <h3>(+91) 8438884252</h3>
+      <h3>Erode</h3>
+      <a href="https://github.com/sabithamahenderan">Github</a>
+      <a href="https://www.linkedin.com/in/m-sabitha-6403712a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a>
+      <a href="https://sabithamahenderan.github.io/Portfolio/">Portfolio</a>
+    </div>
+  </div>
+  <div class="two">
+    <div class="obj">
+      <h2 style="color: rgb(154, 154, 241);">Objective</h2>
+      <p>Computer Science Engineering Student. <br>
+        I consider myself a responsible and orderly person.<br>
+         I am looking forward to gaining my first work experience.</p>
+    </div>
+    <div class="skill">
+      <h2 style="color: rgb(154, 154, 241);">Skills</h2>
+      <ul>
+        <li>HTML, CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Bootstrap</li>
+        <li>MySQL</li>
+      </ul>
+    </div>
+  </div>
+  <div class="three">
+    <div class="projects">
+      <h2 style="color: rgb(154, 154, 241);">Academic Projects</h2>
+      <h3>HTML and CSS Based Projects</h3>
+      <ul>
+        <li><a href="https://sabithamahenderan.github.io/E-commercewebsite/">E-commerce Website</a> A project showcasing basic e-commerce functionality.</li>
+        <li><a href="https://sabithamahenderan.github.io/campus-recruitment/">Campus Recruitment</a> A project for campus recruitment.</li>
+        <li><a href="https://sabithamahenderan.github.io/myresume/">My Resume</a> A resume in HTML format.</li>
+      </ul>
+      <h3>JavaScript Based Projects</h3>
+      <ul>
+        <li><a href="https://sabithamahenderan.github.io/food-delivery/">Food Delivery</a> A project for food delivery service.</li>
+        <li><a href="https://sabithamahenderan.github.io/RockPaperSeissors/">Rock Paper Scissors</a> A game of Rock Paper Scissors.</li>
+        <li><a href="https://sabithamahenderan.github.io/Portfolio/">Portfolio</a> An updated portfolio website.</li>
+        <li><a href="https://sabithamahenderan.github.io/calculator/">Calculator</a> A basic calculator application.</li>
+      </ul>
+    </div>
+    <div class="tools">
+      <h2 style="color: rgb(154, 154, 241);">Tools</h2>
+      <ul>
+        <li>Figma UI/UX Design Tool</li>
+        <li>MS Word</li>
+        <li>PowerPoint</li>
+        <li>Git & GitHub</li>
+        <li>Canva</li>
+      </ul>
+      <h2 style="color: rgb(154, 154, 241);">Certifications</h2>
+      <ol>
+        <li><a href="#">Front-End Development</a></li>
+        <li><a href="#">Python - ETS Academy</a></li>
+        <li><a href="#">Python - Guvi</a></li>
+        <li><a href="#">Emotional Intelligence - NPTEL</a></li>
+        <li><a href="#">CSS and JavaScript</a></li>
+      </ol>
+    </div>
+  </div>
+  <div class="four">
+    <div class="educate">
+      <h2 style="color: rgb(154, 154, 241);">Education</h2>
+      <h3><b>Al-Ameen Engineering College, Erode</b></h3>
+      <h4>Bachelor of Engineering (B.E) in Computer Science and Engineering, 2021-2025</h4>
+      <ul><li>CGPA: 89%</li></ul>
+      <h3><b>Government Higher Secondary School</b></h3>
+      <h4>High School Certificate (HSC), 2021</h4>
+      <ul><li>Percentage: 91.2%</li></ul>
+    </div>
+    <div class="lang">
+      <h2 style="color: rgb(154, 154, 241);">Languages</h2>
+      <p>Tamil</p>
+      <p>English</p>
+      <h2 style="color: rgb(154, 154, 241);">Interests</h2>
+      <p>Editing</p>
+      <p>Learning</p>
+      <p>Designing</p>
+    </div>
+  </div>
+</body>
+</html>

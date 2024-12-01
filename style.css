@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-attachment: fixed;
+}
+.one, .two, .three, .four {
+  display: grid;
+  grid-template-columns: 900px 300px;
+  gap: 20px;
+  padding: 20px;
+}
+.one {
+  grid-template-columns: 900px 300px;
+}
+.two, .three, .four {
+  grid-template-columns: 900px 300px;
+}
+.one, .two, .three, .four {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+}
+h1, h2, h3, h4 {
+  margin: 0 0 10px;
+}
+a {
+  display: block;
+  margin: 5px 0;
+  color: #007BFF;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+ul li, ol li {
+  margin-bottom: 10px;
+}
+.two .skill ul, .three .tools ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.two .skill li, .three .tools li {
+  margin-bottom: 10px;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 1200px) {
+  .one, .two, .three, .four {
+    grid-template-columns: 1fr fr;
+  }
+  body{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .one, .two, .three, .four {
+    padding: 10px;
+  }
+  .name, .phone, .obj, .skill, .projects, .tools, .educate, .lang {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .name h1, .phone h3, .obj h2, .skill h2, .projects h2, .tools h2, .educate h2, .lang h2 {
+    font-size: 10px;
+  }
+  .name a, .phone a, .skill li, .tools li, .educate h3, .lang p {
+    font-size: 10px;
+  }
+}
